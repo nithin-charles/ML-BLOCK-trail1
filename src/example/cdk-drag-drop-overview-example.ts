@@ -16,7 +16,7 @@ export class CdkDragDropOverviewExample implements OnInit {
   position = { x: 0, y: 0 };
   initialPosition = { x: 0, y: 0 };
   isDragging: boolean = false;
-  @Input() blockId: number = 1;
+  @Input() blockId: number;
 
   public ngOnInit() {
     // On webpage reload the position will be taken from thee local storagee and values are assigned to retain the dropped position
